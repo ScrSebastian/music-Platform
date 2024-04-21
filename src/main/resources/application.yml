@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/music?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 1a1a1a1a
+
+mybatis-plus:
+  mapper-locations: classpath:/mybatis/mappers/*.xml
+  type-aliases-package: com.example.musicplatform.pojo
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+logging:
+  level:
+    com.jd.mapper: debug
+
+jwt:
+  secret: 123456
